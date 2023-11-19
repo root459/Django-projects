@@ -1,0 +1,3 @@
+contains the static files and images
+files in this are directly accessible so dont put security files here
+such things are placed here that can be dowloaded from website without authentication such as harry gives notes in his videos are put here 
