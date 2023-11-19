@@ -1,0 +1,7 @@
+create a folder open with vs code and give this command
+=>django-admin startproject First
+this will create a project and in project there can be end number of apps
+now create our first project in this by giving this command.
+=>python manage.py startapp firstapp
+after this add a file urls.py in the firstapp folder and copy the urls.py content of the project and paste it in the urls.py of the app folder
+and create requests in it and in views.py of the app.
