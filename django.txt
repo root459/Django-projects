@@ -5,3 +5,14 @@ now create our first project in this by giving this command.
 =>python manage.py startapp firstapp
 after this add a file urls.py in the firstapp folder and copy the urls.py content of the project and paste it in the urls.py of the app folder
 and create requests in it and in views.py of the app.
+
+created two folders static and templates 
+static for the static files such as images etc
+now in settings.py add path of static folder
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static")
+]
+visit a.txt for more details on static 
+
+now for templates add its path in the settings in templates dir=[os.path.join(BASE_DIR, "templates"]  
+now create a.html in templates and to acceess it go to views.py
