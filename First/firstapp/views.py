@@ -9,9 +9,10 @@ def index(request):
 def settings(request):
     return HttpResponse("this is settings")
 
-def about(request):
+def aboutus(request):
     return HttpResponse("this is about page")
 
 
-def services(request):
-    return HttpResponse("this is service page")
+def contactus(request):
+    return HttpResponse("this is contact us page")
+

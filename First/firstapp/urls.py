@@ -5,6 +5,6 @@ from firstapp import views
 urlpatterns = [
     path('',views.index,name='home' ),
     path('settings',views.settings,name='settings'),
-    path('about',views.about,name="about"),
-    path('services',views.services,name="services")
+    path('aboutus',views.aboutus,name="aboutus"),
+    path('contactus',views.contactus,name="contactus")
 ]
