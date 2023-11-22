@@ -6,13 +6,13 @@ def index(request):
     }
     return render(request,'index.html',context)
 
-def settings(request):
-    return HttpResponse("this is settings")
 
 def aboutus(request):
-    return HttpResponse("this is about page")
+    return render(request,'aboutus.html')
+    
 
 
 def contactus(request):
-    return HttpResponse("this is contact us page")
+    return render(request,'.contactus.html')
+    
 
