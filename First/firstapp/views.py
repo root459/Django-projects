@@ -13,6 +13,6 @@ def aboutus(request):
 
 
 def contactus(request):
-    return render(request,'.contactus.html')
+    return render(request,'contactus.html')
     
 

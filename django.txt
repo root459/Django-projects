@@ -24,3 +24,5 @@ python manage.py migrate
 now we will create a super user which can have many acess.
 to create a super user we will do  
 -->python manage.py createsuperuser
+
+https://source.unsplash.com/1600x900/?nature,water

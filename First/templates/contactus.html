@@ -1,3 +1,54 @@
 {% extends "base.html" %} {% block body %}
-<p>this is contact us page in body block</p>
+<div class="container-fluid px-0">
+  <div
+    id="carouselExampleSlidesOnly"
+    class="carousel slide"
+    data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img
+          src="https://source.unsplash.com/1600x900/?contact,phone"
+          style="height: 500px"
+          class="d-block w-100"
+          alt="..." />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h3 class="text-center">Contact Us</h3>
+  <form>
+    <div class="form-group">
+      <label for="name">Name </label>
+      <input type="text" class="form-control" id="name" placeholder="name" />
+    </div>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Email address</label>
+      <input
+        type="email"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp" />
+      <small id="emailHelp" class="form-text text-muted"
+        >We'll never share your email with anyone else.</small
+      >
+    </div>
+    <div class="form-group">
+      <label for="Phone number">Ephone number</label>
+      <input
+        type="email"
+        class="form-control"
+        id="exampleInputEmail1"
+        aria-describedby="emailHelp" />
+      <small id="emailHelp" class="form-text text-muted"
+        >We'll never share your email with anyone else.</small
+      >
+    </div>
+
+    <div class="form-group">
+      <label for="desc">Tell me about what you want to contact for me</label>
+      <textarea class="form-control" id="desc" rows="3"></textarea>
+    </div>
+  </form>
+</div>
 {% endblock body %} {% block title %}Contact us |{% endblock title %}
