@@ -25,4 +25,18 @@ now we will create a super user which can have many acess.
 to create a super user we will do  
 -->python manage.py createsuperuser
 
+
+
+now after creating model we have to do 2 works
+ 1) register this model in the admin.py write 
+from home.models  import Contact 
+admin.site.register(Contact)
+2) copy the name of the app from the apps.py i.e. FirstappConfig  and go to setting.py and in installed apps write 
+'firstapp.apps.FirstappConfig', 
+run python manage.py makemigrations
+this command say we have created some changes in the models create a file of the changes made 
+now to make changes in database 
+python manage.py migrate 
+
+now code in views.py of app for accepting the form data and send it to database
 https://source.unsplash.com/1600x900/?nature,water
