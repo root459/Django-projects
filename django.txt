@@ -33,10 +33,24 @@ from home.models  import Contact
 admin.site.register(Contact)
 2) copy the name of the app from the apps.py i.e. FirstappConfig  and go to setting.py and in installed apps write 
 'firstapp.apps.FirstappConfig', 
-run python manage.py makemigrations
+run python manage.py makemigrations//make file of the changes 
 this command say we have created some changes in the models create a file of the changes made 
 now to make changes in database 
-python manage.py migrate 
+python manage.py migrate //apply the pending changes 
+
 
 now code in views.py of app for accepting the form data and send it to database
 https://source.unsplash.com/1600x900/?nature,water
+
+now the form is connected to database now we want that form sends message that form has submitted or not 
+for this go to django messages framework and copy this->
+from django.contrib.messages import constants as messages
+paste in the settings.py 
+in views.py paste the following sentence 
+from django.contrib import messages
+#paste that which is required we require success message so only paste it in views.py 
+messages.debug(request, "%s SQL statements were executed." % count)
+messages.info(request, "Three credits remain in your account.")
+messages.success(request, "Profile details updated.")
+messages.warning(request, "Your account expires in three days.")
+messages.error(request, "Document deleted.")
