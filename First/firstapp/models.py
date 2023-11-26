@@ -7,7 +7,9 @@ class Contact(models.Model):
     phone=models.CharField(max_length=13)
     desc=models.TextField()
     date=models.DateField()
- #for more check at documentation in django fields   
+#for more check at documentation in django fields   
         
+    def __str__(self):#send the information with names
+        return self.name
     
     
