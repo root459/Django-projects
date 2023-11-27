@@ -6,6 +6,7 @@ def index(request):
     context={
         'variable':"this is sent"#sending a dictionary with variables and values so they can be accessed by the render
     }
+    messages.success(request,"this is a text message")
     return render(request,'index.html',context)
 
 
@@ -26,5 +27,4 @@ def contactus(request):
 
 
     return render(request,'contactus.html')
-
 

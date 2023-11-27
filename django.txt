@@ -54,3 +54,14 @@ messages.info(request, "Three credits remain in your account.")
 messages.success(request, "Profile details updated.")
 messages.warning(request, "Your account expires in three days.")
 messages.error(request, "Document deleted.")
+
+
+now to run queries we can do this 
+in the cmd write ->python manage.py shell
+from home.models import Contact 
+Contact.objects.all()[0].name//gives name of the 0 index Contact and if remove[0] then all contact will be returned 
+
+now if we want to know names with yuvraj name then
+Contact.objects.filter(name="yuvraj)
+it supports multiple parameters also Contact.objects.filter(name="yuvraj,phone="90767898")
+for more queries go to "making queries django"
