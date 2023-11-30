@@ -14,7 +14,7 @@ STATICFILES_DIRS = [
 ]
 visit a.txt for more details on static 
 
-now for templates add its path in the settings in templates dir=[os.path.join(BASE_DIR, "templates"]  
+now for templates add its path in the settings in templates dir=[os.path.join(BASE_DIR, "templates")]  
 now create a.html in templates and to acceess it go to views.py
 
 

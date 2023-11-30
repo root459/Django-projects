@@ -1,0 +1,12 @@
+create project userproject 
+then make migration python manage.py makemigration and python manage.py migrate
+then create app name Home 
+then register the app in the settings.py to register go to apps.py copy "HomeConfig" and go to settings.py in installed apps and paste "Home.apps.HomeConfig" 
+create static and templates folder
+give path to them in settings.
+paste in settings.py
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static")
+]
+and in templates in settings.py place in dirs this  os.path.join(BASE_DIR, "templates")
+create superuser and in add user in the admin page
